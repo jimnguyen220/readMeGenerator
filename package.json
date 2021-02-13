@@ -1,0 +1,22 @@
+{
+  "name": "readmegenerator",
+  "version": "1.0.0",
+  "description": "command-line application that dynamically generates a README.md file from user's input",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimnguyen220/readMeGenerator.git"
+  },
+  "author": "Jim Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimnguyen220/readMeGenerator/issues"
+  },
+  "homepage": "https://github.com/jimnguyen220/readMeGenerator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}

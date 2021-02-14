@@ -1,2 +1,22 @@
 # readMeGenerator
 command-line application that dynamically generates a professional README.md file from a user's input
+
+## Objectives
+
+The goal of  this project is to use the command line in Node.js to create a README file.  The information on this README file will be inputted by the user, then dynamically created to a generateREADME.md file.
+
+The generated README must meet the following criteria:
+
+* User inputs their information when prompted on a command-line application
+
+* After answering questions, the information creates a README file that generates Title of project and includes sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests and Questions.
+
+* A badge is displayed near the top of the README indicating which license the user selects and includes an explanation of the license in that section.
+
+* Questions section will include what the user entered in for the Github username, email address and instructions on how t o reach them with additional questions.
+
+* Table of contents section will allow for user to click the links and is  taken to the corresponding section of README
+
+
+As there is no link to a live website, there will be a walkthrough video demonstrating functionality of the application.
+

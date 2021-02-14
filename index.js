@@ -3,9 +3,26 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const markdown = require('./generateMarkdown');
 
-console.log()
+
 // TODO: Create an array of questions for user input
-const questions = [];
+const questions = inquirer.prompt([
+    {
+        type: "input",
+        name: "title",
+        message: "What is the name of your project?",
+    },
+    {
+        type: "input",
+        name: "",
+        message: "",
+    },
+    {
+        type: "input",
+        name: "",
+        message: "",
+    },
+    
+]);
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -21,6 +38,6 @@ function init() {
 init();
 
 
-fs.writeFile('README.md', writeToFile, (err) =>
+fs.writeFile('generateREADME.md', writeToFile, (err) =>
  err ? console.log(err) : console.log('Creating README.md')
  );

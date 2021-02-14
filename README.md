@@ -18,5 +18,5 @@ The generated README must meet the following criteria:
 * Table of contents section will allow for user to click the links and is  taken to the corresponding section of README
 
 
-As there is no link to a live website, there will be a walkthrough video demonstrating functionality of the application.
+This project will not include a link to a live website.  A video walkthrough of the application is below
 

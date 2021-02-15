@@ -20,3 +20,10 @@ The generated README must meet the following criteria:
 
 This project will not include a link to a live website.  A video walkthrough of the application is below
 
+---------------------------
+
+Resources:
+
+[Inquirer package Documents](https://www.npmjs.com/package/inquirer)
+
+[Learning how to use .md or .markdown](https://guides.github.com/features/mastering-markdown/)

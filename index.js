@@ -6,13 +6,18 @@ const fileName = require('./assets/generateMarkdown');
 const questions =[
     {
         type:'input',
+        name:'name',
+        message: 'Hi! Welcome to the README generator. What is your name?'
+    },
+    {
+        type:'input',
         name:'title',
-        message: "What is the name of your project?"
+        message: "What is the title of your project?"
     },
     {
         type:'input',
         name:'description',
-        message: "Write a short description for why you are creating this project"
+        message: "Write a short description for why you are creating this project:"
     },
     {
         type:'input',
@@ -22,27 +27,27 @@ const questions =[
     {
         type:'input',
         name:'usage',
-        message: "input questions for usage here"
+        message: "Please list any additional instructions required for this project:"
     },
     {
         type:'input',
-        name:'contribution',
-        message: "contribution guidelines here"
+        name:'contributing',
+        message: "Please list any contribution guidelines for others to participate in your project:"
     },
     {
         type:'input',
         name:'test',
-        message: "how do you test the application"
+        message: "To test the app, please enter the following:"
     },
     {
         type:'input',
         name:'github',
-        message: "What is your github username?"
+        message: "Please enter your github username:"
     },
     {
         type:'input',
         name:'email',
-        message: "Please enter email address"
+        message: "Please enter the email address you would like to use for this project:"
     },
     {
         type:'list',
@@ -65,53 +70,79 @@ function writeToFile(fileName, data) {
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Contributing](#contribution)
+* [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
 
+
+------------------------------------
 
 ## Description
 
 ${data.description}
 
-Your description of the project is displayed above.  Let the reader know the purpose and motivation for why you are creating this project.  It is also helpful to include a problem you are trying to solve and/or any learnings
+
+------------------------------------
 
 ## Installation
 
+To install this application, you will need to enter the following line of code into a Node.js session.  
+    
     ${data.install}
+
+
+------------------------------------
 
 ## Usage
 
-${data.usage}
+This section describes any additional instructions required to use the app. 
 
-## Contribution
+    ${data.usage}
 
-${data.contribution}
+
+------------------------------------
+
+## Contributing
+
+This section covers contribution guidelines for others to participate in your project.
+
+    ${data.contributing}
+
+
+------------------------------------
 
 ## Tests
 
-Test Instructions
+To test the app, please enter the following code
 
     ${data.test}
 
+
+------------------------------------
 
 ## License
 
 ${data.license}
 
+
+------------------------------------
+
 ## Questions
 
-To contact the author of this repo-
+This repo was created by ${data.name}.  If you have any additional questions, I can be reached on
 
 Github: @${data.github}
 
+-or-
+
 Email: ${data.email}
+
 
 `;
         
-        fs.writeFile("./assets/renderREADME.md", readMe, (err) =>
-        err ? console.err(err) : console.log("Creating README.md"))
-        });
+    fs.writeFile("./assets/renderREADME.md", readMe, (err) =>
+    err ? console.err(err) : console.log("Creating README.md"))
+    });
 };
 
 

@@ -27,3 +27,5 @@ Resources:
 [Inquirer package Documents](https://www.npmjs.com/package/inquirer)
 
 [Learning how to use .md or .markdown](https://guides.github.com/features/mastering-markdown/)
+
+[Additional formatting tips](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)

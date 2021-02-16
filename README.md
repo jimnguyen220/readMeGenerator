@@ -3,7 +3,7 @@ command-line application that dynamically generates a professional README.md fil
 
 ## Objectives
 
-The goal of  this project is to use the command line in Node.js to create a README file.  The information on this README file will be inputted by the user, then dynamically created to a generateREADME.md file.
+The goal of  this project is to use the command line in Node.js to create a README file.  The information on this README file will be inputted by the user, then dynamically created to a `renderREADME.md` file.
 
 The generated README must meet the following criteria:
 
@@ -13,7 +13,7 @@ The generated README must meet the following criteria:
 
 * A badge is displayed near the top of the README indicating which license the user selects and includes an explanation of the license in that section.
 
-* Questions section will include what the user entered in for the Github username, email address and instructions on how t o reach them with additional questions.
+* Questions section will include what the user entered in for the Github username, email address and instructions on how to reach them with additional questions.
 
 * Table of contents section will allow for user to click the links and is  taken to the corresponding section of README
 
@@ -28,4 +28,10 @@ Resources:
 
 [Learning how to use .md or .markdown](https://guides.github.com/features/mastering-markdown/)
 
-[Additional formatting tips](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
+[Additional markdown formatting tips](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
+
+[Licensing a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository)
+
+[Choosealicense.com](https://choosealicense.com/)
+
+[Shields.io](https://shields.io/)

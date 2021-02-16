@@ -1,5 +1,5 @@
 
-# Project one
+# Project One
 
 * [Installation](#installation)
 * [Usage](#usage)
@@ -13,7 +13,7 @@
 
 ## Description
 
-To make it easier to create a README file for future projects
+To make it easier to create README markdown files in the future
 
 
 ------------------------------------
@@ -31,7 +31,7 @@ To install this application, you will need to enter the following line of code i
 
 This section describes any additional instructions required to use the app. 
 
-    Will need to use node.js
+    code with care
 
 
 ------------------------------------
@@ -49,14 +49,14 @@ This section covers contribution guidelines for others to participate in your pr
 
 To test the app, please enter the following code
 
-    npm install
+    npm test
 
 
 ------------------------------------
 
 ## License
 
-license 1
+
 
 
 ------------------------------------

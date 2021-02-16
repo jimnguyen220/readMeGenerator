@@ -1,7 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const fileName = require('./assets/generateMarkdown');
+const generateMarkdown = require('./assets/generateMarkdown');
+
 
 const questions =[
     {
@@ -22,7 +23,8 @@ const questions =[
     {
         type:'input',
         name:'install',
-        message: "How will your application be installed?"
+        message: "How will your application be installed?",
+        default: "npm install"
     },
     {
         type:'input',
@@ -37,7 +39,8 @@ const questions =[
     {
         type:'input',
         name:'test',
-        message: "To test the app, please enter the following:"
+        message: "To test the app, please enter the following:",
+        default: "npm test"
     },
     {
         type:'input',
@@ -50,105 +53,27 @@ const questions =[
         message: "Please enter the email address you would like to use for this project:"
     },
     {
-        type:'list',
+        type:'checkbox',
         name:'license',
-        message: "Please select any licenses you will be using",
-        choices: ["license 1", "license 2", "license 3", "license 4", "none"]
+        message: "Please select any open source licenses for this project",
+        choices: ["MIT License", "license 2", "license 3", "license 4", "none"]
     },
 ]   
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(readMe, data) {
     inquirer.prompt(questions)
-    .then((data) => {
-    let readMe =
-
-`
-# ${data.title}
-
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
-
-
-------------------------------------
-
-## Description
-
-${data.description}
-
-
-------------------------------------
-
-## Installation
-
-To install this application, you will need to enter the following line of code into a Node.js session.  
-    
-    ${data.install}
-
-
-------------------------------------
-
-## Usage
-
-This section describes any additional instructions required to use the app. 
-
-    ${data.usage}
-
-
-------------------------------------
-
-## Contributing
-
-This section covers contribution guidelines for others to participate in your project.
-
-    ${data.contributing}
-
-
-------------------------------------
-
-## Tests
-
-To test the app, please enter the following code
-
-    ${data.test}
-
-
-------------------------------------
-
-## License
-
-${data.license}
-
-
-------------------------------------
-
-## Questions
-
-This repo was created by ${data.name}.  If you have any additional questions, I can be reached on
-
-Github: @${data.github}
-
--or-
-
-Email: ${data.email}
-
-
-`;
-        
+    .then(generateMarkdown(readMe, data),
     fs.writeFile("./assets/renderREADME.md", readMe, (err) =>
-    err ? console.err(err) : console.log("Creating README.md"))
-    });
+    err ? console.err(err) : console.log("Success! Creating README file.")));
 };
 
 
 // TODO: Create a function to initialize app
 function init() {
-    writeToFile();
+
+   writeToFile();
 }
 
 // Function call to initialize app

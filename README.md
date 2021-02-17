@@ -20,6 +20,8 @@ The generated README must meet the following criteria:
 
 This project will not include a link to a live website.  A video walkthrough of the application is below
 
+
+
 ---------------------------
 
 Resources:

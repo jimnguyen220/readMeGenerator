@@ -26,6 +26,8 @@ Resources:
 
 [Inquirer package Documents](https://www.npmjs.com/package/inquirer)
 
+[Filesystem docs](https://nodejs.org/api/fs.html)
+
 [Learning how to use .md or .markdown](https://guides.github.com/features/mastering-markdown/)
 
 [Additional markdown formatting tips](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)

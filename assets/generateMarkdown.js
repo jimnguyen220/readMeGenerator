@@ -2,64 +2,83 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
 
-    let badge = "![license badge](https://img.shields.io/badge/License-"
+    let badge = "[![license badge](https://img.shields.io/badge/License-"
 
     if (license === "Apache License 2.0") {
 
-        badge = badge+"Apache%20License%202.0-green.svg)";
+        badge = badge+"Apache%20License%202.0-green.svg)]";
 
     } else if (license === "GNU GPLv3"){
 
-        badge = badge+"GNU%20GPLv3-blue.svg)";
+        badge = badge+"GNU%20GPLv3-blue.svg)]";
 
     } else if (license === "MIT License"){
         
-        badge = badge+"MIT-yellow.svg)";
+        badge = badge+"MIT-yellow.svg)]";
 
     } else if (license === "ISC License"){
         
-        badge = badge+"ISC-orange.svg)";
+        badge = badge+"ISC-orange.svg)]";
 
     } else {
         
         return "";
     }
 
-    return badge;
+    renderLicenseLink(license, badge);
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
-        let link;
+function renderLicenseLink(license, badge) {
+
     if (license === "Apache License 2.0") {
 
-     link = "(https://choosealicense.com/licenses/mit/)"
+        link = badge+"(https://choosealicense.com/licenses/apache-2.0/)";
+        
 
     } else if (license === "GNU GPLv3"){
 
-
+        link = badge+"(https://choosealicense.com/licenses/gpl-3.0/)"
 
     } else if (license === "MIT License"){
         
-
+        link = badge+"(https://choosealicense.com/licenses/mit/)"    
 
     } else if (license === "ISC License"){
         
-
+        link = badge+"(https://choosealicense.com/licenses/isc/)" 
 
     } else {
         
         return "";
     }
 
+    renderLicenseSection(license, link)
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
+function renderLicenseSection(license, link) {
+
+    if (license !== "") {
+        const section =
+       `------------------------------------
   
+        ## License
+        
+          ${link}
+        
+        
+        ------------------------------------`
+
+
+    } else {
+        
+        return "";
+    }
   
+
 }
 
 // TODO: Create a function to generate markdown for README

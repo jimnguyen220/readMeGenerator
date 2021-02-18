@@ -20,10 +20,10 @@ The generated README must meet the following criteria:
 
 This project will not include a link to a live website.  A video walkthrough of the application is below
 
-![license badge](https://img.shields.io/badge/License-Apache%20License%202.0-green.svg)
-![license badge](https://img.shields.io/badge/License-GNU%20GPLv3-blue.svg)
-![license badge](https://img.shields.io/badge/License-MIT-yellow.svg)(https://choosealicense.com/licenses/mit/)
-![license badge](https://img.shields.io/badge/License-ISC-orange.svg)
+[![license badge](https://img.shields.io/badge/License-Apache%20License%202.0-green.svg)](https://choosealicense.com/licenses/apache-2.0/)
+[![license badge](https://img.shields.io/badge/License-GNU%20GPLv3-blue.svg)](https://choosealicense.com/licenses/gpl-3.0/)
+[![license badge](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
+[![license badge](https://img.shields.io/badge/License-ISC-orange.svg)](https://choosealicense.com/licenses/isc/)
 
 ---------------------------
 

@@ -61,31 +61,22 @@ function renderLicenseLink(license, badge) {
 // If there is no license, return an empty string
 function renderLicenseSection(license, link) {
 
-    if (license !== "") {
-        const section =
-       `------------------------------------
-  
-        ## License
-        
-          ${link}
-        
-        
-        ------------------------------------`
+    if (license !== "None") {
 
+        return link
 
     } else {
         
         return "";
     }
   
-
+    
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-    const license = data.license;
+    let license = data.license;
     renderLicenseBadge(license);
-    renderLicenseLink(license);
 
 
     const readMe = 

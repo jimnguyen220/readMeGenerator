@@ -1,4 +1,4 @@
-# Project 1
+# test
 
   * [Installation](#installation)
   * [Usage](#usage)
@@ -12,7 +12,7 @@
   
   ## Description
   
-  To make it easier to create README files for future projects
+  test
   
   
   ------------------------------------
@@ -37,7 +37,7 @@
   
   ## Contributing
   
-  This section covers contribution guidelines for others to participate in your project.
+  This section covers contribution guidelines for others to participate in your project.  Additional information can be found at [contributing convenant](https://www.contributor-covenant.org/)
   
       n/a
   
@@ -55,14 +55,14 @@
   
   ## License
   
-  
+  Apache License 2.0
   
   
   ------------------------------------
   
   ## Questions
   
-  This repo was created by **Jim Nguyen**.  If you have any additional questions, I can be reached on
+  This repo was created by **Jim**.  If you have any additional questions, I can be reached on
   
   Github: @jimnguyen220
   

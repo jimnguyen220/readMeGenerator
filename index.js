@@ -53,10 +53,10 @@ const questions =[
         message: "Please enter the email address you would like to use for this project:"
     },
     {
-        type:'checkbox',
+        type:'list',
         name:'license',
         message: "Please select any open source licenses for this project",
-        choices: ["MIT License", "license 2", "license 3", "license 4", "none"]
+        choices: ["Apache License 2.0", "GNU GPLv3", "MIT License", "ISC License", "None"]
     },
 ]   
 
@@ -75,11 +75,9 @@ function init() {
     inquirer.prompt(questions)
     .then(data => { 
         generateMarkdown(data);        
-        let readMe = generateMarkdown(data)
+        const readMe = generateMarkdown(data)
         writeToFile(readMe, data)
     })
-
-
 
 };
 

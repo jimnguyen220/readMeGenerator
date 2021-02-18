@@ -2,11 +2,56 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
 
+    let badge = "![license badge](https://img.shields.io/badge/License-"
+
+    if (license === "Apache License 2.0") {
+
+        badge = badge+"Apache%20License%202.0-green.svg)";
+
+    } else if (license === "GNU GPLv3"){
+
+        badge = badge+"GNU%20GPLv3-blue.svg)";
+
+    } else if (license === "MIT License"){
+        
+        badge = badge+"MIT-yellow.svg)";
+
+    } else if (license === "ISC License"){
+        
+        badge = badge+"ISC-orange.svg)";
+
+    } else {
+        
+        return "";
+    }
+
+    return badge;
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
+        let link;
+    if (license === "Apache License 2.0") {
+
+     link = "(https://choosealicense.com/licenses/mit/)"
+
+    } else if (license === "GNU GPLv3"){
+
+
+
+    } else if (license === "MIT License"){
+        
+
+
+    } else if (license === "ISC License"){
+        
+
+
+    } else {
+        
+        return "";
+    }
 
 }
 
@@ -14,12 +59,17 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   
+  
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-    console.log(data)
-let readMe = 
+    const license = data.license;
+    renderLicenseBadge(license);
+    renderLicenseLink(license);
+
+
+    const readMe = 
  `# ${data.title}
 
   * [Installation](#installation)
@@ -59,7 +109,7 @@ let readMe =
   
   ## Contributing
   
-  This section covers contribution guidelines for others to participate in your project.
+  This section covers contribution guidelines for others to participate in your project.  Additional information can be found at [contributing convenant](https://www.contributor-covenant.org/)
   
       ${data.contributing}
   
@@ -77,7 +127,7 @@ let readMe =
   
   ## License
   
-  ${data.license}
+    ${data.license}
   
   
   ------------------------------------

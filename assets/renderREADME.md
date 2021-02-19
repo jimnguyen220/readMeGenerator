@@ -1,4 +1,7 @@
-# Project 1
+# 
+
+ 
+    
 
   * [Installation](#installation)
   * [Usage](#usage)
@@ -12,7 +15,7 @@
   
   ## Description
   
-  To make it easier to create README file
+  
   
   
   ------------------------------------
@@ -30,7 +33,7 @@
   
   This section describes any additional instructions required to use the app. 
   
-      n/a
+      
   
   
   ------------------------------------
@@ -39,7 +42,7 @@
   
   This section covers contribution guidelines for others to participate in your project.  Additional information can be found at [contributing convenant](https://www.contributor-covenant.org/)
   
-      n/a
+      
   
   
   ------------------------------------
@@ -54,21 +57,23 @@
   ------------------------------------
   
   ## License
+
+ The license for this project is - click the button at the top of the README for a link to information about this license. 
   
-    Apache License 2.0
+    None
   
   
   ------------------------------------
   
   ## Questions
   
-  This repo was created by **Jim Nguyen**.  If you have any additional questions, I can be reached on
+  This repo was created by ****.  If you have any additional questions, I can be reached on
   
-  Github: @jimnguyen220
+  Github: @
   
   -or-
   
-  Email: jimnguyen220@gmail.com
+  Email: 
   
   
   

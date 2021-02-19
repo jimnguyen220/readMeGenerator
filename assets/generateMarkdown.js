@@ -65,22 +65,49 @@ function renderLicenseSection(license, link) {
 
         return link
 
+
     } else {
         
         return "";
     }
-  
     
+
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
     let license = data.license;
-    renderLicenseBadge(license);
+    // renderLicenseBadge(license);
+
+    let badge = "[![license badge](https://img.shields.io/badge/License-"
+
+    if (license === "Apache License 2.0") {
+
+        badge = badge+"Apache%20License%202.0-green.svg)](https://choosealicense.com/licenses/apache-2.0/)";
+
+    } else if (license === "GNU GPLv3"){
+
+        badge = badge+"GNU%20GPLv3-blue.svg)](https://choosealicense.com/licenses/gpl-3.0/)";
+
+    } else if (license === "MIT License"){
+        
+        badge = badge+"MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)";
+
+    } else if (license === "ISC License"){
+        
+        badge = badge+"ISC-orange.svg)](https://choosealicense.com/licenses/isc/)";
+
+    } else if (license === "None"){
+        badge = "";
+        license = "";
+    }
 
 
     const readMe = 
  `# ${data.title}
+
+ ${badge}
+    
 
   * [Installation](#installation)
   * [Usage](#usage)
@@ -136,6 +163,8 @@ function generateMarkdown(data) {
   ------------------------------------
   
   ## License
+
+ The license for this project is - click the button at the top of the README for a link to information about this license.  If you chose "None" for the license, there will be no button at the top.
   
     ${data.license}
   
@@ -158,5 +187,7 @@ function generateMarkdown(data) {
 `;
 return readMe;
 }
+
+
 
 module.exports = generateMarkdown;

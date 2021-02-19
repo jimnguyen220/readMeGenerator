@@ -57,12 +57,11 @@ const questions =[
         name:'license',
         message: "Please select any open source licenses for this project",
         choices: ["Apache License 2.0", "GNU GPLv3", "MIT License", "ISC License", "None"]
-    },
-]   
+    },]   
 
 
 // TODO: Create a function to write README file
-function writeToFile(readMe, data) {
+function writeToFile(readMe, license) {
         fs.writeFile("./assets/renderREADME.md", readMe, (err) =>
         err ? console.error(err) : console.log("Success! Creating README file."));
 }
@@ -75,8 +74,8 @@ function init() {
     inquirer.prompt(questions)
     .then(data => { 
         generateMarkdown(data);        
-        const readMe = generateMarkdown(data)
-        writeToFile(readMe, data)
+        const readMe = generateMarkdown(data);
+        writeToFile(readMe, data);
     })
 
 };

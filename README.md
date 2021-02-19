@@ -22,7 +22,7 @@ This project will not include a link to a live website.  A video walkthrough of 
 
 [![license badge](https://img.shields.io/badge/License-Apache%20License%202.0-green.svg)](https://choosealicense.com/licenses/apache-2.0/)
 [![license badge](https://img.shields.io/badge/License-GNU%20GPLv3-blue.svg)](https://choosealicense.com/licenses/gpl-3.0/)
-[![license badge](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
+[![license badge](https://img.shields.io/badge/License-ISC-orange.svg)](https://choosealicense.com/licenses/isc/)
 [![license badge](https://img.shields.io/badge/License-ISC-orange.svg)](https://choosealicense.com/licenses/isc/)
 
 ---------------------------
@@ -42,3 +42,5 @@ Resources:
 [Choosealicense.com](https://choosealicense.com/)
 
 [Shields.io](https://shields.io/)
+
+[License Badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)

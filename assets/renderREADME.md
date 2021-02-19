@@ -1,6 +1,6 @@
-# 
+# Project README
 
- 
+ [![license badge](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
     
 
   * [Installation](#installation)
@@ -15,7 +15,7 @@
   
   ## Description
   
-  
+  To make it easier to create README files for future projects
   
   
   ------------------------------------
@@ -33,7 +33,7 @@
   
   This section describes any additional instructions required to use the app. 
   
-      
+      n/a
   
   
   ------------------------------------
@@ -42,7 +42,7 @@
   
   This section covers contribution guidelines for others to participate in your project.  Additional information can be found at [contributing convenant](https://www.contributor-covenant.org/)
   
-      
+      n/a
   
   
   ------------------------------------
@@ -58,22 +58,22 @@
   
   ## License
 
- The license for this project is - click the button at the top of the README for a link to information about this license. 
+ The license for this project is - click the button at the top of the README for a link to information about this license.  If you chose "None" for the license, there will be no button at the top.
   
-    None
+    MIT License
   
   
   ------------------------------------
   
   ## Questions
   
-  This repo was created by ****.  If you have any additional questions, I can be reached on
+  This repo was created by **Jim Nguyen**.  If you have any additional questions, I can be reached on
   
-  Github: @
+  Github: @jimnguyen220
   
   -or-
   
-  Email: 
+  Email: jimnguyen220@gmail.com
   
   
   

@@ -18,12 +18,9 @@ The generated README must meet the following criteria:
 * Table of contents section will allow for user to click the links and is  taken to the corresponding section of README
 
 
-This project will not include a link to a live website.  A video walkthrough of the application is below
+This project will not include a link to a live website.  A link to a video walkthrough of the application is below
 
-[![license badge](https://img.shields.io/badge/License-Apache%20License%202.0-green.svg)](https://choosealicense.com/licenses/apache-2.0/)
-[![license badge](https://img.shields.io/badge/License-GNU%20GPLv3-blue.svg)](https://choosealicense.com/licenses/gpl-3.0/)
-[![license badge](https://img.shields.io/badge/License-ISC-orange.svg)](https://choosealicense.com/licenses/isc/)
-[![license badge](https://img.shields.io/badge/License-ISC-orange.svg)](https://choosealicense.com/licenses/isc/)
+[YouTube video of readme-generator](https://youtu.be/-KLz3G0Zvaw)
 
 ---------------------------
 
